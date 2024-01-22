@@ -20,6 +20,12 @@ const Achievment = styled.div`
 			font-weight: bold;
 		}
 	}
+	@media (max-width: 60rem) {
+		flex-direction: column;
+		.logo {
+			margin-bottom: 3rem;
+		}
+	}
 `;
 
 export default function Achievments() {

@@ -1,5 +1,4 @@
 import { ImageResponse } from "@vercel/og";
-import { title, description } from "@/lib/info";
 
 export const config = {
 	runtime: "edge",
@@ -48,7 +47,7 @@ export default async function handler() {
 							fontSize: 20,
 						}}
 					>
-						{title}
+						payall
 					</span>
 				</div>
 				<div
@@ -68,7 +67,7 @@ export default async function handler() {
 						whiteSpace: "pre-wrap",
 					}}
 				>
-					{description}
+					made by A. L.
 				</div>
 			</div>
 		),

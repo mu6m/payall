@@ -14,6 +14,7 @@ export default function Nav() {
 		font-weight: bold;
 		gap: 1rem;
 		padding-block: 1rem;
+		padding-inline: 1rem;
 		gap: 3rem;
 		.left {
 			margin-right: auto;
@@ -37,6 +38,12 @@ export default function Nav() {
 				border-radius: 12px;
 				color: #f5fdf9;
 				background-color: #0c1639;
+				border: none;
+			}
+		}
+		@media (max-width: 60rem) {
+			.center {
+				display: none;
 			}
 		}
 	`;

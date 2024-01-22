@@ -45,13 +45,26 @@ const FooterDiv = styled.footer`
 	* {
 		color: #feffff;
 	}
+	@media (max-width: 60rem) {
+		.footcols {
+			display: flex;
+			justify-content: center;
+			.footcol {
+				display: none;
+			}
+			.company-info {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
 `;
 
 export default function Footer() {
 	return (
 		<FooterDiv>
 			<div className="footcols">
-				<div className="footcol">
+				<div className="footcol company-info">
 					<div className="logo">
 						<h1>Payall</h1>
 					</div>

@@ -17,6 +17,7 @@ const MainHero = styled.div`
 	background-color: #24b95b;
 	box-shadow: 0 0 0 100vmax #24b95b;
 	clip-path: inset(0 -100vmax);
+	position: relative;
 	.main-hero-msg {
 		min-height: 20rem;
 		height: 100%;
@@ -57,7 +58,7 @@ const MainHero = styled.div`
 			}
 		}
 	}
-	position: relative;
+
 	.slidetext {
 		bottom: 0;
 		display: flex;
@@ -81,6 +82,21 @@ const MainHero = styled.div`
 				width: 3rem;
 				fill: #f5fdf9;
 			}
+		}
+	}
+
+	@media (max-width: 60rem) {
+		.main-hero-msg {
+			.image {
+				display: none !important;
+			}
+			.text {
+				width: 80%;
+			}
+			margin-block: 3rem;
+		}
+		.slidetext {
+			display: none !important;
 		}
 	}
 `;

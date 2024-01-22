@@ -50,6 +50,15 @@ const Tesmonail1 = styled.div`
 			}
 		}
 	}
+	@media (max-width: 60rem) {
+		flex-direction: column;
+		.image {
+			display: none;
+		}
+		.text {
+			width: 80%;
+		}
+	}
 `;
 const Tesmonail2 = styled.div`
 	max-width: 60rem;
@@ -97,6 +106,15 @@ const Tesmonail2 = styled.div`
 			a {
 				text-decoration: underline;
 			}
+		}
+	}
+	@media (max-width: 60rem) {
+		flex-direction: column;
+		.image {
+			display: none;
+		}
+		.text {
+			width: 80%;
 		}
 	}
 `;
@@ -151,6 +169,15 @@ const Tesmonail3 = styled.div`
 			}
 		}
 	}
+	@media (max-width: 60rem) {
+		flex-direction: column;
+		.image {
+			display: none;
+		}
+		.text {
+			width: 80%;
+		}
+	}
 `;
 const Tesmonail4 = styled.div`
 	max-width: 60rem;
@@ -198,6 +225,15 @@ const Tesmonail4 = styled.div`
 			a {
 				text-decoration: underline;
 			}
+		}
+	}
+	@media (max-width: 60rem) {
+		flex-direction: column;
+		.image {
+			display: none;
+		}
+		.text {
+			width: 80%;
 		}
 	}
 `;

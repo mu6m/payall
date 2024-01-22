@@ -39,6 +39,21 @@ const EmailForm = styled.div`
 			border-radius: 12px;
 		}
 	}
+	@media (max-width: 60rem) {
+		.form {
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+			input {
+				width: 20rem;
+			}
+			button {
+				max-width: 10rem;
+				display: flex;
+				cursor: pointer;
+			}
+		}
+	}
 `;
 
 export default function Email() {
@@ -48,7 +63,7 @@ export default function Email() {
 				<h1>Make payall part of your work and get daily update.</h1>
 				<div className="form">
 					<input placeholder="Enter Your Email"></input>
-					<button>View All</button>
+					<button>Submit</button>
 				</div>
 			</EmailForm>
 		</>

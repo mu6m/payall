@@ -20,7 +20,7 @@ const StepsDiv = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 60rem;
+		max-width: 60rem;
 		.window-wrap {
 			width: 100%;
 			max-width: 13rem;
@@ -51,6 +51,16 @@ const StepsDiv = styled.div`
 			margin-inline: 2rem;
 			margin-bottom: 6rem;
 			border-radius: 25rem;
+		}
+	}
+	@media (max-width: 60rem) {
+		margin: 0 auto !important;
+		.windows {
+			flex-direction: column;
+			gap: 2rem;
+			hr {
+				display: none;
+			}
 		}
 	}
 `;

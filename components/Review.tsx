@@ -80,6 +80,11 @@ const ReviewDiv = styled.div`
 		border: 3px solid #0c1639;
 		border-radius: 12px;
 	}
+	@media (max-width: 60rem) {
+		.reviews {
+			flex-direction: column;
+		}
+	}
 `;
 
 export default function Review() {
